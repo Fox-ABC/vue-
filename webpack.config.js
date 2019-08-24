@@ -40,7 +40,7 @@ module.exports={
         rules:[
             {test: /\.css$/,use:['style-loader','css-loader'] },//配置处理.css文件的第三方loader规则
             {test: /\.less$/,use:['style-loader','css-loader','less-loader']},//处理.less文件
-            {test: /\.sass$/,use:['style-loader','css-loader','sass-loader']},//处理.sass文件
+            {test: /\.scss$/,use:['style-loader','css-loader','sass-loader']},//处理.sass文件
 
             {test: /\.(jpg|jpeg|gif|png)$/,use:['url-loader?limit=5584&name=[hash:8]-[name].[ext]']},//处理图片路径的loader
             //limit 给定的值,是图片的大小,单位是byte,如果我们引用的图片大于给定的limit值,则不会被转为base64格式

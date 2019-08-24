@@ -38,6 +38,7 @@
 <style scoped>
 .appcon{
 	padding-top: 40px;
+	padding-bottom: 50px ;
 	overflow-x: hidden;
 	/* 隐藏x轴上的超出的部分 */
 }
