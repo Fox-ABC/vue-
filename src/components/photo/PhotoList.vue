@@ -12,6 +12,7 @@
             :key="item.id"
             @click="getPhotoListByCateId(item.id)"
           >
+          <!-- 如果用手机调试,发现 图片列表 不能切换,可以将click改为tap  ,但是可能有新的bug -->
 		  <!-- 这里的 getPhotoListByCateId(item.id)的参数 是要把当前图片分类的id传过去,去读取对应接口的数据-->
             <!-- 注意:这里的 :class="['mui-control-item',item.id==0?'mui-active':'']"
             是让页面默认 "全部"的样式,点击改变颜色,是滑动条里的样式-->
