@@ -108,6 +108,9 @@ export default {
     },
     addToShopCar() {//加入购物车
       this.ballflag = !this.ballflag;
+     // {id:商品的id,price:商品的单价,count:要买商品的数量,selected:true(商品是否被选中)}  
+     var goodsinfoincar={id:this.id,price:this.goodsinfo.sell_price,count:this.count,selected:true} 
+     this.$store.commit("addToCar",goodsinfoincar)
     },
     beforeEnter(el) {
         el.style.transform="translate(0,0)";
