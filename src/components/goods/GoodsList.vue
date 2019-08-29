@@ -64,7 +64,7 @@ export default {
       this.axios
         .get("api/getgoods?pageindex=" + this.pageindex)
         .then(result => {
-          console.log(result);
+          // console.log(result);
           if (result.data.status === 0) {
             this.goodslist = this.goodslist.concat(result.data.message);
           }
